@@ -6,11 +6,11 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 09:35:19 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/27 13:32:47 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/27 17:56:09 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_putuns(unsigned int i)
 {

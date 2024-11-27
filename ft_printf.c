@@ -6,11 +6,11 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 13:07:01 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/27 17:38:40 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/27 17:55:16 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 static int	ft_format(va_list args, char f)
 {
