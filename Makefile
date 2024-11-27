@@ -4,8 +4,8 @@ CFLAGS = -Wall -Wextra -Werror
 
 NAME = libftprintf.a
 
-MANDATORY = ft_putchar.c ft_putstr.c #ft_putadd.c ft_putdec.c ft_putint.c \
-			ft_putuns.c ft_puthex_low.c ft_puthex_upp.c ft_putper.c ft_printf.c
+MANDATORY = ft_putchar.c ft_putstr.c ft_strlen.c ft_putnbr.c ft_putuns.c \
+			ft_puthex_low.c ft_puthex_upp.c ft_putptr.c ft_printf.c
 
 OBJM = $(MANDATORY:.c=.o)
 
@@ -15,7 +15,7 @@ $(NAME) : $(OBJM)
 	$(AR) rc $(NAME) $(OBJM)
 
 %.o : %.c printf.h
-	$(CC) $(CFLAGS) -c $< -o $@ 
+	$(CC) $(CFLAGS) -c $<
 
 clean :
 	$(RM) $(OBJM)

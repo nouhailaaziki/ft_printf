@@ -1,32 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printf.h                                           :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/24 13:02:43 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/27 17:33:28 by noaziki          ###   ########.fr       */
+/*   Created: 2024/11/25 20:18:56 by noaziki           #+#    #+#             */
+/*   Updated: 2024/11/27 13:32:59 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#include "printf.h"
 
-# include <unistd.h>
-# include <stdlib.h>
-# include <stdarg.h>
+int	ft_strlen(const char *s)
+{
+	int	i;
 
-// Mandatory part
-
-int	ft_printf(const char *, ...);
-int	ft_putchar(int c);
-int	ft_putstr(char *str);
-int	ft_putptr(void *ptr);
-int	ft_putnbr(int nbr);
-int	ft_putuns(unsigned int i);
-int	ft_puthex_low(unsigned long n);
-int	ft_puthex_upp(unsigned long n);
-int	ft_strlen(const char *s);
-
-#endif
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
