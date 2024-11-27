@@ -6,7 +6,7 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 13:02:43 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/27 17:33:28 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/27 17:39:34 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 
 // Mandatory part
 
-int	ft_printf(const char *, ...);
+int	ft_printf(const char *format, ...);
 int	ft_putchar(int c);
 int	ft_putstr(char *str);
 int	ft_putptr(void *ptr);

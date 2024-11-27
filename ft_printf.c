@@ -6,7 +6,7 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 13:07:01 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/27 15:31:41 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/27 17:38:40 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ static int	ft_format(va_list args, char f)
 		counter = ft_putchar(f);
 	return (counter);
 }
+
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;

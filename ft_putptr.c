@@ -6,7 +6,7 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 17:05:57 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/27 13:31:14 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/27 17:38:56 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_putptr(void *ptr)
 {
-	int			counter;
+	int				counter;
 	unsigned long	address;
 
 	counter = 0;
