@@ -6,11 +6,9 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 20:18:56 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/27 17:56:15 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/29 11:42:05 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "ft_printf.h"
 
 int	ft_strlen(const char *s)
 {

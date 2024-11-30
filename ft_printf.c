@@ -6,7 +6,7 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/24 13:07:01 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/27 17:55:16 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/30 13:14:04 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ static int	ft_format(va_list args, char f)
 	else if (f == 'u')
 		counter = ft_putuns(va_arg(args, unsigned int));
 	else if (f == 'x')
-		counter = ft_puthex_low(va_arg(args, unsigned long));
+		counter = ft_puthex_low(va_arg(args, unsigned int));
 	else if (f == 'X')
-		counter = ft_puthex_upp(va_arg(args, unsigned long));
+		counter = ft_puthex_upp(va_arg(args, unsigned int));
 	else if (f == 'p')
 		counter = ft_putptr(va_arg(args, void *));
 	else
@@ -51,7 +51,7 @@ int	ft_printf(const char *format, ...)
 	{
 		if (format[i] == '%' && format[i + 1] != '\0')
 			counter += ft_format(args, format[++i]);
-		else
+		else if (format[i] != '%')
 			counter += ft_putchar(format[i]);
 		i++;
 	}

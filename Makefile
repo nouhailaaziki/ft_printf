@@ -14,11 +14,12 @@ all : $(NAME)
 $(NAME) : $(OBJM)
 	$(AR) rc $(NAME) $(OBJM)
 
+
 %.o : %.c printf.h
 	$(CC) $(CFLAGS) -c $<
 
 clean :
-	$(RM) $(OBJM)
+	$(RM) $(OBJM) $(OBJB)
 
 fclean : clean
 	$(RM) $(NAME)
