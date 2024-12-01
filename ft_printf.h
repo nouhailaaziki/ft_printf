@@ -6,7 +6,7 @@
 /*   By: noaziki <noaziki@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/27 17:54:28 by noaziki           #+#    #+#             */
-/*   Updated: 2024/11/30 13:19:09 by noaziki          ###   ########.fr       */
+/*   Updated: 2024/11/30 14:37:32 by noaziki          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 
 # include <unistd.h>
 # include <stdarg.h>
-
-// Mandatory part
 
 int	ft_printf(const char *format, ...);
 int	ft_putchar(int c);

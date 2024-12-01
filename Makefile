@@ -14,14 +14,15 @@ all : $(NAME)
 $(NAME) : $(OBJM)
 	$(AR) rc $(NAME) $(OBJM)
 
-
-%.o : %.c printf.h
+%.o : %.c ft_printf.h
 	$(CC) $(CFLAGS) -c $<
 
 clean :
-	$(RM) $(OBJM) $(OBJB)
+	$(RM) $(OBJM)
 
 fclean : clean
 	$(RM) $(NAME)
 
 re : fclean all
+
+.PHONY : clean
